@@ -1,0 +1,21 @@
+public class Quadrilatero {
+    private Ponto[] pontos;
+
+    public Quadrilatero(Ponto[] pontos) {
+        if (pontos.length != 4) {
+            throw new IllegalArgumentException("Um quadrilátero deve ter 4 pontos.");
+        }
+        this.pontos = pontos;
+    }
+
+    public Ponto[] getPontos() {
+        return pontos;
+    }
+
+    public void setPontos(Ponto[] pontos) {
+        if (pontos.length != 4) {
+            throw new IllegalArgumentException("Um quadrilátero deve ter 4 pontos.");
+        }
+        this.pontos = pontos;
+    }
+}
